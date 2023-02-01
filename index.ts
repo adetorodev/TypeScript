@@ -9,7 +9,7 @@ let firstName = "Johanna"
 let mathematician = Math.random() > 0.5 ? undefined : "Mark Godlberg"
 
 let thinker: string | null = null
-if(Math.random() > 0.5){
+if (Math.random() > 0.5) {
     thinker = "Susanne Langer"
 }
 
@@ -22,4 +22,16 @@ let philosopher = "Hypatia"
 let specificallyAda: "Ada"
 specificallyAda = "Ada"
 // specificallyAda = "brown"
+// strictNullCheck 
+let geneticist = Math.random() > 0.5
+    ? "Barbara McClicntock"
+    : undefined
+
+if(geneticist) {
+    geneticist.toLowerCase()
+}
+geneticist?.toUpperCase()
+
+geneticist && geneticist.toUpperCase(); // Ok: string | undefined
+geneticist?.toUpperCase(); // Ok: string | undefined
 
