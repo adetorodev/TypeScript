@@ -19,3 +19,7 @@ let investor: number | string = "Hedy Lamarr"
 
 let philosopher = "Hypatia"
 
+let specificallyAda: "Ada"
+specificallyAda = "Ada"
+// specificallyAda = "brown"
+
