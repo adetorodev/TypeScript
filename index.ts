@@ -28,11 +28,20 @@ let geneticist = Math.random() > 0.5
     ? "Barbara McClicntock"
     : undefined
 
-if(geneticist) {
+if (geneticist) {
     geneticist.toLowerCase()
 }
 geneticist.toUpperCase() // // Error: Object is possibly 'undefined'.
 
 geneticist && geneticist.toUpperCase(); // Ok: string | undefined
 geneticist?.toUpperCase(); // Ok: string | undefined
+
+let biologist = Math.random() > 0.5 && "Rachel Carson";
+if (biologist) {
+    biologist; // Type: string
+} else {
+    biologist; // Type: false | string
+}
+
+let MyName = ...
 
