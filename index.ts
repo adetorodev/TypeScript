@@ -14,3 +14,8 @@ if(Math.random() > 0.5){
 }
 
 let investor: number | string = "Hedy Lamarr"
+
+// const philosopher = "Hypatia"
+
+let philosopher = "Hypatia"
+
