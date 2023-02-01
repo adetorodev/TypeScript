@@ -22,6 +22,7 @@ let philosopher = "Hypatia"
 let specificallyAda: "Ada"
 specificallyAda = "Ada"
 // specificallyAda = "brown"
+
 // strictNullCheck 
 let geneticist = Math.random() > 0.5
     ? "Barbara McClicntock"
@@ -30,7 +31,7 @@ let geneticist = Math.random() > 0.5
 if(geneticist) {
     geneticist.toLowerCase()
 }
-geneticist?.toUpperCase()
+geneticist.toUpperCase() // // Error: Object is possibly 'undefined'.
 
 geneticist && geneticist.toUpperCase(); // Ok: string | undefined
 geneticist?.toUpperCase(); // Ok: string | undefined
