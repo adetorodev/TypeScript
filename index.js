@@ -21,6 +21,14 @@ var geneticist = Math.random() > 0.5
 if (geneticist) {
     geneticist.toLowerCase();
 }
-geneticist === null || geneticist === void 0 ? void 0 : geneticist.toUpperCase();
+geneticist.toUpperCase(); // // Error: Object is possibly 'undefined'.
 geneticist && geneticist.toUpperCase(); // Ok: string | undefined
 geneticist === null || geneticist === void 0 ? void 0 : geneticist.toUpperCase(); // Ok: string | undefined
+var biologist = Math.random() > 0.5 && "Rachel Carson";
+if (biologist) {
+    biologist; // Type: string
+}
+else {
+    biologist; // Type: false | string
+}
+var MyName = ;
