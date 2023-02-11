@@ -81,3 +81,4 @@ function getSongRecordingDate(song: string): Date | undefined {
         default:
             return undefined; // Ok
     }
+}

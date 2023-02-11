@@ -53,3 +53,19 @@ function singSongs(songs) {
     }
     return songs.length;
 }
+function getSongAt(songs, index) {
+    return index < songs.length
+        ? songs[index]
+        : undefined;
+}
+function getSongRecordingDate(song) {
+    switch (song) {
+        case "Strange Fruit":
+            return new Date('April 20, 1939'); // Ok
+        case "Greensleeves":
+            return "unknown";
+        // Error: Type 'string' is not assignable to type 'Date'.
+        default:
+            return undefined; // Ok
+    }
+}
