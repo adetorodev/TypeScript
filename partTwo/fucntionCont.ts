@@ -24,3 +24,10 @@ singersong = function (song) {
 // Type of song: string
 return `Singing: ${song.toUpperCase()}!`; // Ok
 };
+
+
+type StringToNumber = (input: string) => number;
+let stringToNumber: StringToNumber;
+stringToNumber = (input) => input.length; // Ok
+stringToNumber = (input) => input.toUpperCase();
+// Type 'string' is not assignable to type 'number'.
