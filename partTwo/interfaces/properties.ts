@@ -21,8 +21,6 @@ function read(page: Page) {
     // Ok: reading the text property doesn't attempt to modify it
     console.log(page.text);
     page.text += "!";
-    //
-    ~~~~
     // Error: Cannot assign to 'text'
     // because it is a read-only property.
 }
